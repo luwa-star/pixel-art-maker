@@ -21,8 +21,9 @@ formSubmit.addEventListener("click", (e) => {
         for (
             let j = 0; j < pixelCanvas.lastElementChild.children[i].children.length; j++
         ) {
-            const add = pixelCanvas.lastElementChild.children[i].children[j];
-            add.style.removeProperty("background-color");
+            const removeColoredCells =
+                pixelCanvas.lastElementChild.children[i].children[j];
+            removeColoredCells.style.removeProperty("background-color");
         }
     }
 });
